@@ -12,8 +12,8 @@
     },
 
     "permissions": [
-        "https://*.ebay.com/*",
-        "https://*.ebay.de/*"
+        "*://*.ebay.com/*",
+        "*://*.ebay.de/*"
     ],
 
     "background" : {
@@ -44,9 +44,9 @@
         /* workaround for random-redirect misfeature */
         {
             "matches": [
-                "https://www.ebay.de/c/*",
-                "https://www.ebay.com/c/*",
-                "https://www.ebay.ch/c/*"
+                "*://www.ebay.de/c/*",
+                "*://www.ebay.com/c/*",
+                "*://www.ebay.ch/c/*"
             ],
             "js": [
                 "util.js",
@@ -58,9 +58,9 @@
         /* seller item list pages */
         {
             "matches": [
-                "https://www.ebay.de/sch/*",
-                "https://www.ebay.com/sch/*",
-                "https://www.ebay.ch/sch/*"
+                "*://www.ebay.de/sch/*",
+                "*://www.ebay.com/sch/*",
+                "*://www.ebay.ch/sch/*"
             ],
             "js": [
                 "util.js",
