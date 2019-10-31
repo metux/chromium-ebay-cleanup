@@ -32,6 +32,12 @@ chrome.webRequest.onBeforeRequest.addListener(
         "*://*.bluekai.com/*",
         "*://*.datacaciques.com/*",
         "*://assets.adobedtm.com/*",
+        "*://rewards.ebay.de/*",
+        "*://gha.ebay.de/*",
+        "*://rover.ebay.de/*",
+        "*://rewards.ebay.com/*",
+        "*://gha.ebay.com/*",
+        "*://rover.ebay.com/*"
     ]},
     ["blocking"]
 );

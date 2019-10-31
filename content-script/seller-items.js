@@ -13,5 +13,6 @@ remove_elements_by_id([
     "Foot",
     "Top",
     "merch_html_100040",
-    "srp-rtm-placeholder"
+    "srp-rtm-placeholder",
+    "glbfooter"
 ]);
