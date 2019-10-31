@@ -21,7 +21,10 @@
         "*://adservice.google.com/*",
         "*://www.googletagservices.com/*",
         "*://www.google.com/adsense/*",
-        "*://www.google.de/adsense/*"
+        "*://www.google.de/adsense/*",
+        "*://assets.adobedtm.com/*",
+        "*://*.bluekai.com/*",
+        "*://*.datacaciques.com/*"
     ],
 
     "background" : {

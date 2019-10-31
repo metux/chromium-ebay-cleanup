@@ -29,6 +29,9 @@ chrome.webRequest.onBeforeRequest.addListener(
         "*://www.google.de/adsense/*",
         "*://adservice.google.com/*",
         "*://www.googletagservices.com/*",
+        "*://*.bluekai.com/*",
+        "*://*.datacaciques.com/*",
+        "*://assets.adobedtm.com/*",
     ]},
     ["blocking"]
 );
