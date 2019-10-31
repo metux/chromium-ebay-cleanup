@@ -2,14 +2,19 @@
 console.log("item-page");
 
 /* normalize URLs of item pages */
-redirect(normalize_url_item(window.location.href));
+newurl = normalize_url_item(window.location.href);
 
-cleanup_links_item();
+if (newurl == window.location.href) {
+    /* do some pagae cleaning */
+    remove_elements_by_id([
+        "merch_html_100040",
+        "srp-rtm-placeholder"
+    ]);
 
-/* do some pagae cleaning */
-remove_elements_by_id([
-    "merch_html_100040",
-    "srp-rtm-placeholder"
-]);
-
-window.setTimeout(function() { cleanup_links_item()}, 2000);
+    cleanup_links_item();
+    window.setTimeout(function() { cleanup_links_item()}, 2000);
+}
+else
+{
+    redirect(newurl);
+}

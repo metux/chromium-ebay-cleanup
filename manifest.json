@@ -3,7 +3,7 @@
 
     "name":        "metux ebay helper",
     "description": "makes browsing on ebay a little bit easier",
-    "version":     "0.0.2",
+    "version":     "0.0.3",
 
     "icons": {
         "128": "icons/128.png",
