@@ -3,7 +3,7 @@
 
     "name":        "metux ebay helper",
     "description": "makes browsing on ebay a little bit easier",
-    "version":     "0.0.1",
+    "version":     "0.0.2",
 
     "icons": {
         "128": "icons/128.png",
@@ -37,6 +37,20 @@
             "js": [
                 "util.js",
                 "content-script/item-page.js"
+            ],
+            "run_at": "document_start"
+        },
+
+        /* workaround for random-redirect misfeature */
+        {
+            "matches": [
+                "https://www.ebay.de/c/*",
+                "https://www.ebay.com/c/*",
+                "https://www.ebay.ch/c/*"
+            ],
+            "js": [
+                "util.js",
+                "content-script/random-redirect-page.js"
             ],
             "run_at": "document_start"
         },

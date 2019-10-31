@@ -1,4 +1,5 @@
 var regexp_url_item = [
+    new RegExp('https://www.ebay.(de)/c/[0-9]+#oid([0-9]+).*'),
     new RegExp('https://www.ebay.(de)/itm/.*/([0-9]+).*'),
     new RegExp('https://www.ebay.(de)/itm/([0-9]+)\?.*')
 ];
@@ -42,8 +43,13 @@ function mkurl_user_items(tld, username) {
     return 'https://www.ebay.'+tld+'/sch/'+username+'/m.html';
 }
 
+/* create a link to an auction item */
+/* NOTE: due to ebay's recent misfeature which automatically redirects
+ *       to some completely unrelated auction once the actual is closed,
+ *       we have to add a special parameter for preventing this shit
+ */
 function mkurl_item(tld, id) {
-    return "https://www.ebay."+tld+"/itm/"+id;
+    return "https://www.ebay."+tld+"/itm/"+id+"?nordt=true";
 }
 
 function match_current_url(re) {
