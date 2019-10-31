@@ -13,7 +13,15 @@
 
     "permissions": [
         "*://*.ebay.com/*",
-        "*://*.ebay.de/*"
+        "*://*.ebay.de/*",
+
+        /* ad blocking */
+        "webRequest",
+        "webRequestBlocking",
+        "*://adservice.google.com/*",
+        "*://www.googletagservices.com/*",
+        "*://www.google.com/adsense/*",
+        "*://www.google.de/adsense/*"
     ],
 
     "background" : {

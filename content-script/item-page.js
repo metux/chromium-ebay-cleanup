@@ -8,7 +8,8 @@ if (newurl == window.location.href) {
     /* do some pagae cleaning */
     remove_elements_by_id([
         "merch_html_100040",
-        "srp-rtm-placeholder"
+        "srp-rtm-placeholder",
+        "scandal100727",
     ]);
 
     cleanup_links_item();
