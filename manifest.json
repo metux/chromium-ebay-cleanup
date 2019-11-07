@@ -14,6 +14,8 @@
     "permissions": [
         "*://*.ebay.com/*",
         "*://*.ebay.de/*",
+        "*://*.ebay.co.uk/*",
+        "*://*.ebay.ch/*",
 
         /* ad blocking */
         "webRequest",
@@ -43,7 +45,8 @@
             "matches": [
                 "https://www.ebay.de/itm/*",
                 "https://www.ebay.com/itm/*",
-                "https://www.ebay.ch/itm/*"
+                "https://www.ebay.ch/itm/*",
+                "https://www.ebay.co.uk/itm/*"
             ],
             "js": [
                 "util.js",
@@ -57,7 +60,8 @@
             "matches": [
                 "*://www.ebay.de/c/*",
                 "*://www.ebay.com/c/*",
-                "*://www.ebay.ch/c/*"
+                "*://www.ebay.ch/c/*",
+                "*://www.ebay.co.uk/c/*"
             ],
             "js": [
                 "util.js",
@@ -71,7 +75,8 @@
             "matches": [
                 "*://www.ebay.de/sch/*",
                 "*://www.ebay.com/sch/*",
-                "*://www.ebay.ch/sch/*"
+                "*://www.ebay.ch/sch/*",
+                "*://www.ebay.co.uk/sch/*"
             ],
             "js": [
                 "util.js",

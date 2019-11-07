@@ -1,14 +1,12 @@
 var regexp_url_item = [
-    new RegExp('https://www.ebay.(de)/c/[0-9]+#oid([0-9]+).*'),
-    new RegExp('https://www.ebay.(de)/itm/.*/([0-9]+).*'),
-    new RegExp('https://www.ebay.(de)/itm/([0-9]+)\?.*')
+    new RegExp('https://www.ebay.(de|com|ch|co.uk)/c/[0-9]+#oid([0-9]+).*'),
+    new RegExp('https://www.ebay.(de|com|ch|co.uk)/itm/.*/([0-9]+).*'),
+    new RegExp('https://www.ebay.(de|com|ch|co.uk)/itm/([0-9]+)\?.*')
 ];
 
 var regexp_url_seller_items = [
-    new RegExp('https://www.ebay.(de)/sch/(.*)/m.html\?.*'),
-    new RegExp('https://www.ebay.(com)/sch/(.*)/m.html\?.*'),
-    new RegExp('https://www.ebay.(de)/sch/(.*)/m.html'),
-    new RegExp('https://www.ebay.(com)/sch/(.*)/m.html'),
+    new RegExp('https://www.ebay.(de|com|ch|co.uk)/sch/(.*)/m.html\?.*'),
+    new RegExp('https://www.ebay.(de|com|ch|co.uk)/sch/(.*)/m.html'),
 ];
 
 
